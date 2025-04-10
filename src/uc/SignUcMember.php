@@ -93,8 +93,8 @@ class SignUcMember
             'uid' => $row['id'],
             'account' => empty($row['account']) ? '' : trim($row['account']),
             'realname' => empty($row['realname']) ? '' : trim($row['realname']),
-            // 'company_id' => empty($row['company_id']) ? 0 : $row['company_id'],
-            // 'dept_id' => empty($row['dept_id']) ? 0 : $row['dept_id'],
+            'company_id' => empty($row['company_id']) ? 0 : $row['company_id'],
+            'dept_id' => empty($row['dept_id']) ? 0 : $row['dept_id'],
             // 'account_type' => empty($row['account_type']) ? 0 : $row['account_type'],
             // 'is_admin' => empty($row['is_admin']) ? 0 : $row['is_admin'],
             'login_time' => $time

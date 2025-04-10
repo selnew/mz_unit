@@ -32,6 +32,8 @@ CREATE TABLE `mz_member` (
   `last_login_ip` varchar(20) DEFAULT NULL COMMENT '最近一次登录IP',
   `reg_source` tinyint(1) NOT NULL DEFAULT 0 COMMENT '注册渠道：0 未知 1 WEB 2微信扫码 3 钉钉扫码 3 qq',
   `login_allow` tinyint(1) NOT NULL DEFAULT 0 COMMENT '允许登录管理：0 未知 1 WEB登录 2 扫码登录 3 需修改密码 4 需完善资料 9 已完善',
+  `company_id` int(11) NOT NULL DEFAULT 0 COMMENT '公司ID',
+  `dept_id` int(11) NOT NULL DEFAULT 0 COMMENT '部门ID',
   `state` tinyint(1) NOT NULL DEFAULT 1 COMMENT '状态：-1删除0禁用1正常',
   `opt_uid` int(11) NOT NULL DEFAULT 0 COMMENT '操作人UID',
   `create_time` int(10) NOT NULL DEFAULT 0 COMMENT '创建时间',
